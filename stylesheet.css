@@ -106,3 +106,19 @@ nav ol li a{
     display:flex;
 
 }
+#hotel{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.gallery{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+img{
+    height:150px;
+    width:150px;
+}

@@ -4,11 +4,13 @@
     margin:0;
     padding :0;
     color:black;
-    background-color: #03c03c;
+    background-color: #0c2340;
+    font-size: 2.2vh;
 }
 #navgroup{
-    margin:none;
-    padding: none;
+    margin:0;
+    margin-bottom: 2em;
+    padding: 0;
     background-color: #ffffff05;
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter:blur(25px);
@@ -16,6 +18,12 @@
     top:0;
     opacity: 0.6;
     height:40px;
+    position: static;
+}
+#logoimage{
+    height:30px;
+    width:30px;
+
 }
 nav{
     padding: none;
@@ -45,6 +53,7 @@ nav ol{
 nav ol li a:hover{
     color:#0fff50;
     transition: ease-in-out 250ms;
+    transform:skew(10deg,2deg);
     flex-grow: 2;
 }
 nav ol li a{
@@ -60,29 +69,40 @@ nav ol li a{
     text-decoration: none;
 }
 /* section main */
-.main{
+
+/#main{
+    top:41px;
     height:100%;
+    margin: 20px;
     display: flex;
     align-items: normal;
     align-items: baseline;
     width: 100%;
-    left:0%;
-    right:0%;
+    font: larger aliceblue;
+    display:flex;
+    flex-direction: column;
 }
-.typein{
-    height:50px;
+.container{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background-color: inherit;
+    justify-content:space-around ;
+    margin:20px;
+    padding:20px;
+    font-size: 3vh;
+
 }
 .companyInformation{
-    background-color: #bf00ff;
-    left:0;
-    right:0;
-    height:40em;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    text-shadow: #4FFFB0;
+    justify-content:space-around ;   
+}
+.companyInformation p{
+    text-align: center;
+    font-size:2.2vh;
+}
+#innnerSection{
+    display:flex;
+
 }

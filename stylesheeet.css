@@ -1,0 +1,88 @@
+/*this is the main default styling sheet
+#navigation section#*/
+*{
+    margin:0;
+    padding :0;
+    color:black;
+    background-color: #03c03c;
+}
+#navgroup{
+    margin:none;
+    padding: none;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter:blur(25px);
+    left:0;
+    top:0;
+    opacity: 0.6;
+    height:40px;
+}
+nav{
+    padding: none;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+}
+nav .logo{
+    padding:none;
+    margin-left:12px;
+    margin-top: none;
+    display: flex;
+    flex-direction: column;
+    column-gap: 4em;
+}
+nav ol{
+    list-style-type:none;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width:50%;
+    align-items: center;
+    
+}
+nav ol li a:hover{
+    color:#0fff50;
+    transition: ease-in-out 250ms;
+    flex-grow: 2;
+}
+nav ol li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color:aliceblue
+
+
+}
+nav ol li a{
+    text-decoration: none;
+}
+/* section main */
+.main{
+    height:100%;
+    display: flex;
+    align-items: normal;
+    align-items: baseline;
+    width: 100%;
+    left:0%;
+    right:0%;
+}
+.typein{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+}
+.companyInformation{
+    background-color: #bf00ff;
+    left:0;
+    right:0;
+    height:40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: #4FFFB0;
+}

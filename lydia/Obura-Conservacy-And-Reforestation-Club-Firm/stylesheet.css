@@ -1,0 +1,170 @@
+/*this is the main default styling sheet
+#navigation section#*/
+section{
+    background: no-repeat green url("background.jpeg") cover;
+}
+*{
+    margin:0;
+    padding :0;
+    color:black;
+    background-color: #0c2340;
+    font-size: 2.2vh;
+}
+#navgroup{
+    margin:0;
+    margin-bottom: 2em;
+    padding: 0;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter:blur(25px);
+    left:0;
+    top:0;
+    opacity: 0.6;
+    height:40px;
+    position: static;
+}
+#logoimage{
+    height:30px;
+    width:30px;
+
+}
+nav,.navCampsite{
+    padding: none;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+}
+nav .logo{
+    padding:none;
+    margin-left:12px;
+    margin-top: none;
+    display: flex;
+    flex-direction: column;
+    column-gap: 4em;
+}
+nav ol,.liCampsite{
+    list-style-type:none;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width:50%;
+    align-items: center;
+    
+}
+nav ol li a:hover,.navCampsite ul li:hover{
+    color:#0fff50;
+    transition: ease-in-out 250ms;
+    /* transform:skew(10deg,2deg); */
+    /* flex-grow: 2; */
+}
+nav ol li a,.navCampsite ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color:aliceblue
+
+
+}
+nav ol li a,.navCampsite ul li a{
+    text-decoration: none;
+}
+/* section main */
+
+/#main,#hotel{
+    top:41px;
+    height:100%;
+    margin: 20px;
+    display: flex;
+    align-items: normal;
+    align-items: baseline;
+    width: 100%;
+    font: larger aliceblue;
+    display:flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;
+    margin:20px;
+    padding:20px;
+    font-size: 3vh;
+
+}
+.companyInformation,.textCampsite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;   
+}
+.companyInformation p,.textCampsite p{
+    text-align: center;
+    font-size:2.2vh;
+}
+#innnerSection{
+    display:flex;
+
+}
+#hotel{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.gallery{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+img{
+    height:150px;
+    width:150px;
+}
+
+/* .headerCampsite{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.headerCampsite .navCampsite ul{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: max-content;
+column-gap: 20vh;
+}
+.headerCampsite .navCampsite ul li{
+   display: flex;
+   list-style-type: none;
+   text-decoration: none; */
+}
+/* table display */
+.popup{
+    display:none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:traslate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px dotted;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index:9998;
+
+}
